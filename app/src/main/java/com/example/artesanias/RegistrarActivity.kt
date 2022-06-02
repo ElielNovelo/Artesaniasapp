@@ -1,5 +1,6 @@
 package com.example.artesanias
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
@@ -44,7 +45,7 @@ class RegistrarActivity : AppCompatActivity() {
     }
 
     fun Registrar(view:View){
-
+        createNewAccount()
     }
 
     private fun createNewAccount(){
@@ -64,13 +65,18 @@ class RegistrarActivity : AppCompatActivity() {
                         val user:FirebaseUser ?= auth.currentUser
                         verifyEmail(user)
 
-                        val userBD = dbReference.child(user!!.uid)
+                        val userBD = dbReference.child(user?.uid.toString())
 
                         userBD.child("name").setValue(name)
                         userBD.child("lastName").setValue(lastName)
+                        action()
                     }
                 }
         }
+    }
+
+    private fun action(){
+        startActivity(Intent(this,LoginActivity::class.java))
     }
 
     private fun verifyEmail(user: FirebaseUser?){
@@ -79,12 +85,13 @@ class RegistrarActivity : AppCompatActivity() {
                 task ->
 
                 if(task.isComplete){
-                    Toast.makeText(this,"Email Enviado",Toast.LENGTH_LONG)
+                    Toast.makeText(this,"Email Enviado",Toast.LENGTH_LONG).show()
                 }else{
-                    Toast.makeText(this,"Error al enviar el Email",Toast.LENGTH_LONG)
+                    Toast.makeText(this,"Error al enviar el Email",Toast.LENGTH_LONG).show()
                 }
 
             }
     }
+
 
 }

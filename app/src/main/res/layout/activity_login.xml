@@ -7,6 +7,14 @@
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="true"/>
+
     <EditText
         android:id="@+id/txtUser"
         android:layout_width="match_parent"
@@ -29,16 +37,25 @@
         android:onClick="login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Iniciar Sesion"
         android:layout_margin="10dp"
         android:background="@color/design_default_color_secondary_variant"
         android:textColor="@android:color/white"/>
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
         android:onClick="forgotPassword"
+        android:text="¿Olvidaste tu contraseña?" />
+
+    <TextView
+        android:onClick="registro"
         android:gravity="center"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¿Olvidaste tu contraseña?" />
+        android:text="Registrar"
+        android:visibility="gone"/>
 </LinearLayout>
