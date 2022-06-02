@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "582219043087",
+    "firebase_url": "https://artesanias-34edb-default-rtdb.firebaseio.com",
+    "project_id": "artesanias-34edb",
+    "storage_bucket": "artesanias-34edb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582219043087:android:8a683af6dbc1b4260e6e7a",
+        "android_client_info": {
+          "package_name": "com.example.artesanias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582219043087-kb69ds4dj56gneuun5tm4jodcdq8p3pp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvE4AabUMNkmIBp961EO3nmReWm26U7_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582219043087-kb69ds4dj56gneuun5tm4jodcdq8p3pp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

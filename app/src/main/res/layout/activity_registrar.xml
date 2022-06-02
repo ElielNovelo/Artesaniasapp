@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrarActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre"
+        android:layout_margin="10dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        android:layout_margin="10dp" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Correo"
+        android:layout_margin="10dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:layout_margin="10dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_secondary_variant"
+        android:onClick="Registrar"
+        android:text="Crear Cuenta"
+        android:textColor="@android:color/white" />
+</LinearLayout>
