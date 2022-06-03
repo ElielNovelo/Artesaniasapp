@@ -29,7 +29,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun forgotPassword(view:View){
-
+        startActivity(Intent(this, ForgotPassActivity::class.java))
     }
 
     fun registro(view:View){

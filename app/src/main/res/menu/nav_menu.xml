@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home"/>
+    <item
+        android:id="@+id/nav_artesanias"
+        android:icon="@drawable/ic_baseline_add_circle_24"
+        android:title="Artesania"/>
+
+    <item
+        android:id="@+id/nav_tienda"
+        android:icon="@drawable/ic_baseline_home_work_24"
+        android:title="Tiendas"/>
+
+
+    <item android:title="Profile">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_baseline_login_24"
+                android:title="login"/>
+
+        </menu>
+
+
+    </item>
+
+
+<!--    <item-->
+<!--        android:id="@+id/nav_login"-->
+<!--        android:icon="@drawable/ic_baseline_login_24"-->
+<!--        android:title="login"/>-->
+
+
+</menu>
