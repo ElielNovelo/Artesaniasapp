@@ -3,4 +3,17 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="open">Drawer Open</string>
     <string name="close">Drawer Closed</string>
+    <string name="all">TODO</string>
+    <string name="name">Mascara de madera</string>
+    <string name="date">2 de marzo de 2020</string>
+    <string name="title_activity_main">Artesanias</string>
+    <string name="subtitle_activity_main">2020</string>
+    <string name="title_activity_add">Nueva Artesania</string>
+    <string name="title_activity_edit">Datos de la Artesania</string>
+    <string name="name_form">Nombre</string>
+    <string name="date_form">Fecha</string>
+    <string name="url_form">Url imagen</string>
+    <string name="description_form">Descripción</string>
+    <string name="save">Guardar</string>
+    <string name="description">Mascara hecha 100% de madera de cedro</string>
 </resources>
