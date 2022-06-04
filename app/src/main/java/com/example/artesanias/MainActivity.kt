@@ -7,16 +7,14 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.artesanias.tiendas.TiendaActivity
 import com.google.android.material.navigation.NavigationView
-import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var toggle : ActionBarDrawerToggle
-    lateinit var drawerLayout: DrawerLayout
+
 
 
 
@@ -36,8 +34,8 @@ class MainActivity : AppCompatActivity() {
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.nav_home -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
-                R.id.nav_artesanias -> Toast.makeText(applicationContext, "Clicked Artesanias", Toast.LENGTH_SHORT).show()
-                R.id.nav_tienda -> Toast.makeText(applicationContext, "Clicked Tienda", Toast.LENGTH_SHORT).show()
+                R.id.nav_artesanias -> startActivity(Intent(this,ArtesaniasActivity::class.java))
+                R.id.nav_tienda -> startActivity(Intent(this, TiendaActivity::class.java))
                 R.id.nav_login -> startActivity(Intent(this, LoginActivity::class.java))
             }
             true

@@ -13,10 +13,10 @@
           android:endY="180"
           android:endX="210"
           android:type="linear">
-        <item android:offset="0" android:color="#FF993399"/>
-        <item android:offset="0.31430733" android:color="#ED6963B9"/>
-        <item android:offset="0.5499395" android:color="#A34587D1"/>
-        <item android:offset="1" android:color="#6600CBFF"/>
+        <item android:offset="0" android:color="#F0676167"/>
+        <item android:offset="0.31430733" android:color="#CE7E7D8A"/>
+        <item android:offset="0.5499395" android:color="#6D86919C"/>
+        <item android:offset="1" android:color="#59E4F4F8"/>
       </gradient>
     </aapt:attr>
   </path>

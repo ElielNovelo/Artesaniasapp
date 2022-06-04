@@ -14,6 +14,18 @@
         android:theme="@style/Theme.Artesanias"
         tools:targetApi="31">
         <activity
+            android:name=".tiendas.TiendaDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tiendas.TiendaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tiendas.EditTiendaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tiendas.AddTiendaActivity"
+            android:exported="false" />
+        <activity
             android:name=".ArtesaniaDetailActivity"
             android:exported="false" />
         <activity
@@ -21,9 +33,6 @@
             android:exported="false" />
         <activity
             android:name=".EditActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Artesanias"
             android:exported="false" />
         <activity
             android:name=".AddActivity"
